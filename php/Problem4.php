@@ -1,12 +1,21 @@
 <?php
-$name="raju";
-
-if($name=="raju"&& $name=="mina" &&$name=="mithu")
-{
-	echo"<b>hello</b>";
-}
-else
-{
-	 echo "<fontcolor=red>You are not recognized</fontcolor>";
-}
+	$name = "raju";
+	
+	function check(){
+		global $name;
+		if($name === "raju" or $name === "mina" or $name === "mithu"){
+			
+			echo "<p><b>Hello:</b> "." ".$name."</p><br/>";
+		}
+	    else{
+			echo '<p>You ar not recognized<p/>';
+		}
+	}
 ?>
+
+<html>
+	<head></head>
+	<body>
+		<?php check(); ?>
+	</body>
+</html>

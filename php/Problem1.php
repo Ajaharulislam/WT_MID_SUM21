@@ -1,13 +1,6 @@
 <html>
 	<head></head>
 	<body>
-	A quick brown
-<?php
-echo "<b>fox</b>"; 
-?>
- jumps over the lazy
- <?php
- echo "<b>dog</b>"
- ?>
-</body>
+		<p>A quick brown <b><?php echo "fox"; ?></b> jumps over the lazy <b><?php echo "dog"; ?></b></p><br/>	
+	</body>
 </html>
