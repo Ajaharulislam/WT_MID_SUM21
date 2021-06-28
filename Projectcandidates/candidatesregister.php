@@ -7,27 +7,40 @@
 	  $err_year="";
       $days = array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31);
 	  $months = array("January","Fabruary","March","April","May","June","July","August","September","October","November","December");
-	  $years = array(1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990);
+	  $years = array(1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000);
 ?>
 
 <html>
-    <head><h2> Registrar Details </h2></head>
+    <head></head>
 	<body>
-		<table>
+	<fieldset> 
+	<form>
+	<table>
 		<tr>
-			<td align="right"> Registrar ID: </td>
-			<td><input type="text" name="reg_id" placeholder="registration id"></td>
+		<td align ="center" colspan ="2"> <h2>Candidates Register </h2></td>
 		</tr>
 		<tr>
 			<td align="right"> Name: </td>
 			<td><input type="text" name="name" placeholder="name"></td>
 		</tr>
 		<tr>
-			<td align="right">Address: </td>
+			<td align="right"> Username: </td>
+			<td><input type="text" name="Username" placeholder="Username"></td>
+		</tr>
+		<tr>
+			<td align="right">Father's Name: </td>
+			<td><input type="text" name="father name" placeholder="Father's Name"></td>
+		</tr>
+		<tr>
+			<td align="right">Mother's Name: </td>
+			<td><input type="text" name="mother name" placeholder="Mother's Name"></td>
+		</tr>
+		<tr>
+			<td align="right"> Present Address: </td>
 			<td><textarea></textarea></td>
 		</tr>
 		<tr>
-			<td align="right">Office Address </td>
+			<td align="right"> Permanent Address: </td>
 			<td><textarea> </textarea></td>
 		</tr>
 		<tr>
@@ -36,8 +49,8 @@
 						
 		</tr>
 		<tr>
-			<td align="right"> Licence Number: </td>
-			<td><input type="text" name="licencenumber" placeholder="licence number"></td>
+			<td align="right"> Age: </td>
+			<td><input type="text" name="age" placeholder="Age"></td>
 		</tr>
 		<tr>
 			<td align="right"> Nationality: </td>
@@ -50,6 +63,10 @@
 		<tr>
 			<td align="right"> NID: </td>
 			<td><input type="text" name="nid" placeholder="NID number"></td>
+		</tr>
+		<tr>
+			<td align="right"> Passport: </td>
+			<td><input type="text" name="passport" placeholder="Passport"></td>
 		</tr>
 		<tr>
 			<td align="right">Birth Date:  </td>
@@ -90,6 +107,7 @@
 			</td>
 			<td><span><?php echo $err_day;?> <?php echo $err_month;?> <?php echo $err_year;?></span>
 			</td>
+			<td><input type="text" name="birth date" placeholder="Birth Date"></td>		
 		</tr>
 		<tr>
 			<td align="right"> Phone: </td>
@@ -103,8 +121,12 @@
 			<td align="right">Marital Status: </td>
 			<td><input type="radio" value="Unmarried" name="maritalstatus"> Unmarried <input name="maritalstatus"  value="Married" type="radio">Married </td>			
 		</tr>
-		
-		
+		<tr>
+		<td align="center" colspan="2"><input type="Submit" value="Register"></td>
+		</tr>
 		</table>
+	</form>
+	</fieldset>
+	<a href="login.php">Back</a>
 	</body>
 </html>
